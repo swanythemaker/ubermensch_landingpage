@@ -66,7 +66,7 @@ export const normal: SiteConfig = {
     {
       number: '04',
       name: 'Attention Capital',
-      title: 'Der Agent erinnert sich nicht nur. Er entscheidet, worüber er nachdenkt.',
+      title: 'Die Laufzeit erinnert sich nicht nur. Sie entscheidet, worüber sie nachdenkt.',
       paragraphs: [
         'Ein persistenter Geist sammelt mehr offene Anliegen, als er je auf einmal bedenken kann. Also wetteifern sie. In der Laufzeit liegt ein Markt, auf dem jede offene Schleife um Aufmerksamkeit bietet, und die Kognition geht an die Anliegen, die sie sich verdienen: jene, die zuvor etwas bewegt haben, die den auf sie verwendeten Gedanken zurückzahlten. Nur eine Laufzeit, die sich erinnert, was sich gelohnt hat, kann bepreisen, worüber als Nächstes nachzudenken ist. Ausgeben wird zum Urteil, nicht zur Gewohnheit.',
         'Die Laufzeit gibt nicht blind aus. Bevor sie sich festlegt, sagt ein kleiner Prognostiker voraus, was jedes Anliegen kosten und was es einbringen wird. Er antwortet mit einem Bereich, nicht mit einer einzelnen Zahl, und sagt, wie sicher er ist. Und die Laufzeit hält stets Aufmerksamkeit für dich in Reserve: die Arbeit, die sie verrichtet, während du fort bist, darf den Moment deiner Ankunft niemals aushungern.',

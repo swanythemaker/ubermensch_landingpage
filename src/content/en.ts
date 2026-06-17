@@ -66,7 +66,7 @@ export const normal: SiteConfig = {
     {
       number: '04',
       name: 'Attention Capital',
-      title: 'The agent does not just remember. It decides what to think about.',
+      title: 'The runtime does not just remember. It decides what to think about.',
       paragraphs: [
         'A persistent mind gathers more open concerns than it can ever think about at once. So they contend. Inside the runtime is a market where every open loop bids for attention, and cognition goes to the concerns that earn it: the ones that moved something before, that repaid the thought spent on them. Only a runtime that remembers what paid off can price what to think about next. Spending becomes a verdict, not a habit.',
         'The runtime does not spend blind. Before it commits, a small forecaster predicts what each concern will cost and what it will return. It answers with a range, not a single number, and says how sure it is. And the runtime always keeps attention in reserve for you: the work it does while you are away can never starve the moment you arrive.',

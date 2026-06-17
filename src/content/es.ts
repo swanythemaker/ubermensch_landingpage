@@ -66,7 +66,7 @@ export const normal: SiteConfig = {
     {
       number: '04',
       name: 'Attention Capital',
-      title: 'El agente no solo recuerda. Decide en qué pensar.',
+      title: 'El runtime no solo recuerda. Decide en qué pensar.',
       paragraphs: [
         'Una mente persistente acumula más asuntos abiertos de los que jamás puede pensar a la vez. Así que compiten. Dentro del runtime hay un mercado donde cada bucle abierto puja por atención, y la cognición va a los asuntos que la ganan: los que antes movieron algo, los que devolvieron el pensamiento gastado en ellos. Solo un runtime que recuerda qué valió la pena puede poner precio a en qué pensar después. Gastar se vuelve un veredicto, no un hábito.',
         'El runtime no gasta a ciegas. Antes de comprometerse, un pequeño pronosticador predice cuánto costará cada asunto y cuánto rendirá. Responde con un rango, no con un solo número, y dice cuán seguro está. Y el runtime siempre guarda atención en reserva para ti: el trabajo que hace mientras no estás nunca puede dejar sin recursos el momento en que llegas.',
