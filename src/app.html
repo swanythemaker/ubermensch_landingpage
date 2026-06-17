@@ -3,25 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Übermensch Framework — An Open-Weight-First Cognitive Runtime</title>
-    <meta
-      name="description"
-      content="A local-first cognitive runtime for persistent artificial agents that remember, retrieve, reflect, and improve over time. Not a chatbot. Not another fake loop."
-    />
     <meta name="theme-color" content="#0B0F14" />
-    <meta property="og:title" content="Übermensch Framework" />
-    <meta property="og:description" content="An open-weight-first cognitive runtime for self-improving persistent agents." />
-    <meta property="og:type" content="website" />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0F14'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' fill='%233DF2E0' text-anchor='middle'%3E%C3%9C%3C/text%3E%3C/svg%3E"
     />
+    <link rel="alternate" type="application/rss+xml" title="Übermensch — News" href="/feed.xml" />
     <link rel="preload" href="/fonts/BreitkopfFraktur.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/NewsreaderItalic.woff2" as="font" type="font/woff2" crossorigin />
+    %sveltekit.head%
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
   </body>
 </html>

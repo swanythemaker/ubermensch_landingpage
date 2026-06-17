@@ -2,10 +2,12 @@
 node_modules/
 dist/
 .vercel/
+.svelte-kit/
 
 # internal docs, tooling and assets — never deployed
 *.md
 !README.md
+!src/content/posts/*.md
 .claude/
 scripts/
 *.zip
