@@ -17,6 +17,17 @@ export interface LexiconEntry {
   meaning: string;
 }
 
+export interface FoundationsSection {
+  kicker: string;
+  title: string;
+  intro: string;
+  layers: { name: string; tag: string; body: string }[];
+  storageLabel: string;
+  storage: { name: string; body: string }[];
+  stackLabel: string;
+  stack: { label: string; body: string }[];
+}
+
 export interface SiteConfig {
   hero: {
     kicker: string;
@@ -35,6 +46,7 @@ export interface SiteConfig {
   };
   pillarsKicker: string;
   pillars: Pillar[];
+  foundations?: FoundationsSection;
   cycle: {
     nodes: string[];
     center: string;

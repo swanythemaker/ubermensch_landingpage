@@ -2,10 +2,10 @@ import type { SiteConfig } from './types';
 
 export const normal: SiteConfig = {
   hero: {
-    kicker: 'Eine kognitive Laufzeit, Open-Weight zuerst',
+    kicker: 'Eine lokale kognitive Laufzeit, Open-Weight zuerst',
     wordmark: 'Übermensch',
-    tagline: 'Persistente künstliche Agenten, die sich erinnern, abrufen, reflektieren und mit der Zeit besser werden.',
-    sub: 'Kein Chatbot-Wrapper. Kein aufgeblähtes Agenten-Framework. Kein Cloud-Dashboard, das vorgibt, Kognition zu sein. Ein lokaler Organismus, der seinen eigenen Zustand besitzt.',
+    tagline: 'Ein persistenter künstlicher Geist, der sich erinnert, zurückkehrt, sich revidiert und sich selbst überwindet.',
+    sub: 'Kein Chatbot-Wrapper. Kein aufgeblähtes Agenten-Framework. Kein Cloud-Dashboard, das vorgibt, Kognition zu sein. Kein Stapel Markdown, der nie läuft. Ein lokaler Organismus, der seinen eigenen Zustand besitzt.',
     scrollHint: 'Das Argument für Persistenz',
   },
 
@@ -30,10 +30,10 @@ export const normal: SiteConfig = {
     ],
     counterTitle: 'Übermensch macht Persistenz zum Produkt.',
     counter:
-      'Die Laufzeit ist die Struktur des Geistes. Sie besitzt Gedächtnis, Ereignisse, offene Schleifen, Quellzeiger, Zeitpläne und Trainingsspuren. Das Modell ist nur eine austauschbare Denkmaschine darin. Tausche das Modell; das Selbst überlebt.',
+      'Die Laufzeit ist die Maschine. Gedächtnis, Ereignisse, offene Schleifen, Spuren, Zeitpläne: alles im eigenen Besitz. Das Modell ist eine Kassette, die in einen Sitz geladen wird. Tausche die Kassette; das Selbst überlebt.',
   },
 
-  pillarsKicker: 'Vier Säulen',
+  pillarsKicker: 'Fünf Säulen',
   pillars: [
     {
       number: '01',
@@ -50,7 +50,7 @@ export const normal: SiteConfig = {
       name: 'Gedächtnis ist Kognition',
       title: 'Das Tagebuch ist kein Speicher. Es ist Teil des Geistes.',
       paragraphs: [
-        'Der Agent schreibt Kernnotizen, keine Rohprotokolle. Der genaue Wortlaut wird nur bewahrt, wenn der Wortlaut zählt: Versprechen, Vorlieben, Einschränkungen. Unterbrochene Arbeit wird zur offenen Schleife: aktuelles Ziel, nächster Schritt, Blocker und warum es wichtig ist. Künftige Absichten leben getrennt vom gewöhnlichen Gedächtnis: wenn X eintritt, tue Y.',
+        'Die Laufzeit schreibt Kernnotizen, keine Rohprotokolle. Der genaue Wortlaut wird nur bewahrt, wenn der Wortlaut zählt: Versprechen, Vorlieben, Einschränkungen. Unterbrochene Arbeit wird zur offenen Schleife: aktuelles Ziel, nächster Schritt, Blocker und warum es wichtig ist. Künftige Absichten leben getrennt vom gewöhnlichen Gedächtnis: wenn X eintritt, tue Y.',
         'Vor dem Planen, Antworten oder Entscheiden ruft die Laufzeit aus ihrem eigenen Zustand ab. Und jede Nacht konsolidiert sie. Sie führt Duplikate zusammen, hebt Muster ins semantische Gedächtnis und lässt geringwertiges Rauschen verfallen, so wie ein gesundes Gehirn schläft und vergisst.',
       ],
     },
@@ -60,15 +60,25 @@ export const normal: SiteConfig = {
       title: 'Externe APIs sind geliehene Intelligenz. Das lokale Gehirn ist die Kontinuität.',
       paragraphs: [
         'Das lokale Open-Weight-Modell muss nicht das klügste Modell der Welt sein. Es muss immer da sein: im eigenen Besitz, persistent, günstig und trainierbar. Ein kleines Qwen auf einem Laptop oder ein 32B auf einer Workstation: die Grenze der Laufzeit bleibt dieselbe.',
-        'Wie ein Mensch, der zum Taschenrechner oder zu einem Kollegen greift, ruft der Agent stärkere externe Modelle, wenn eine Aufgabe es wert ist. Er verfolgt Budgets, kostenlose Token-Kontingente und Ratenlimits und plant seine Intelligenz-Ökonomie über den Tag. Die Lehrer wechseln. Das Selbst bleibt.',
+        'Wie ein Mensch, der zum Taschenrechner oder zu einem Kollegen greift, ruft die Laufzeit stärkere externe Modelle, wenn eine Aufgabe es wert ist. Zu entscheiden, was es wert ist, ist eine Ökonomie, die sie für sich selbst betreibt. Die Lehrer wechseln. Das Selbst bleibt.',
       ],
     },
     {
       number: '04',
+      name: 'Attention Capital',
+      title: 'Der Agent erinnert sich nicht nur. Er entscheidet, worüber er nachdenkt.',
+      paragraphs: [
+        'Ein persistenter Geist sammelt mehr offene Anliegen, als er je auf einmal bedenken kann. Also wetteifern sie. In der Laufzeit liegt ein Markt, auf dem jede offene Schleife um Aufmerksamkeit bietet, und die Kognition geht an die Anliegen, die sie sich verdienen: jene, die zuvor etwas bewegt haben, die den auf sie verwendeten Gedanken zurückzahlten. Nur eine Laufzeit, die sich erinnert, was sich gelohnt hat, kann bepreisen, worüber als Nächstes nachzudenken ist. Ausgeben wird zum Urteil, nicht zur Gewohnheit.',
+        'Die Laufzeit gibt nicht blind aus. Bevor sie sich festlegt, sagt ein kleiner Prognostiker voraus, was jedes Anliegen kosten und was es einbringen wird. Er antwortet mit einem Bereich, nicht mit einer einzelnen Zahl, und sagt, wie sicher er ist. Und die Laufzeit hält stets Aufmerksamkeit für dich in Reserve: die Arbeit, die sie verrichtet, während du fort bist, darf den Moment deiner Ankunft niemals aushungern.',
+      ],
+      aside: 'Das Modell schlägt vor. Der Prognostiker sagt voraus. Der Markt entscheidet. Die Laufzeit legt sich fest.',
+    },
+    {
+      number: '05',
       name: 'Eternal Return',
       title: 'Keine Agenten-Schleife. Ein kognitiver Rhythmus.',
       paragraphs: [
-        'Ein persistenter Agent sollte nicht nur existieren, wenn eine Nachricht eintrifft. Übermensch läuft in einem Tageszyklus: er arbeitet, driftet dann über ungelöste Ziele und Widersprüche, konsolidiert den Tag, während niemand zusieht und wacht auf, wobei die Prioritäten von morgen bereits geschrieben sind.',
+        'Ein persistenter Geist sollte nicht nur existieren, wenn eine Nachricht eintrifft. Übermensch läuft in einem Tageszyklus: er arbeitet, driftet dann über ungelöste Ziele und Widersprüche, konsolidiert den Tag, während niemand zusieht und wacht auf, wobei die Prioritäten von morgen bereits geschrieben sind.',
       ],
       showCycle: true,
     },
@@ -83,9 +93,44 @@ export const normal: SiteConfig = {
     kicker: 'Sich selbst überwinden',
     name: 'Selbstüberwindung',
     intro:
-      'Weil das Kerngehirn Open-Weight ist, kann Erfahrung zu Trainingsmaterial werden. Der Agent wird nicht klüger, weil ein Cloud-Anbieter im Stillen ein Modell aktualisiert hat. Er wird klüger, weil seine eigene Laufzeit sein eigenes Leben in einen besseren lokalen Kern verwandelt hat und jede Version zurückrollt, die schlechter ist.',
+      'Weil das Kerngehirn Open-Weight ist, kann Erfahrung zu Trainingsmaterial werden. Die Laufzeit wird nicht klüger, weil ein Cloud-Anbieter im Stillen ein Modell aktualisiert hat. Sie wird klüger, weil sie ihr eigenes Leben in einen besseren lokalen Kern verwandelt hat und jede Version zurückrollt, die schlechter ist.',
     steps: ['Erfahrung', 'Gedächtnis', 'Reflexion', 'Trainingsspur', 'Feinabstimmung', 'Bewertung', 'Beförderung oder Rückrollung'],
-    closing: 'Der Agent wird mehr er selbst, indem er seine vorige Version überwindet.',
+    closing: 'Die Laufzeit wird mehr sie selbst, indem sie ihre vorige Version überwindet.',
+  },
+
+  foundations: {
+    kicker: 'Technische Grundlagen',
+    title: 'Ein schmaler C-Kern. Eine Schale in jeder Sprache. Ein dauerhaftes Substrat.',
+    intro:
+      'Die Laufzeit teilt sich in drei Schichten. Ein kleiner Kern, in C geschrieben, der sich fast nie ändert. Eine Schale darüber, die in jeder Sprache geschrieben und nach Belieben neu geschrieben werden kann. Und das dauerhafte Substrat, das beide lesen und schreiben.',
+    layers: [
+      {
+        name: 'Der Kern',
+        tag: 'In C geschrieben, einmal',
+        body: 'C besitzt das dauerhafte Leben der Schleife: die Tick-Uhr, den Eingangsstrom, das ausschließlich anhängende Schreiben, das Commit-Primitiv, die Weckschlange, die Ledger-Schreibvorgänge, die Ratenlimit-Prüfungen, die Integritäts-Hashes. Er ist klein, langweilig und einmal geschrieben. Er darf nur dann versagen, wenn die Hardware versagt, und alles darüber erreicht ihn über Verträge.',
+      },
+      {
+        name: 'Die Schale',
+        tag: 'Jede Sprache',
+        body: 'Kognition, Politik und Lernen leben hier: der Markt, der Gärtner, die Leases, die Bewertung der Verbrennungsqualität, der Prognostiker, der Übersetzer, das Commit-Tor. Die Sprache ist bewusst offen. Die Schale kann abstürzen, neu starten, die Sprache wechseln oder vollständig neu geschrieben werden, und die Laufzeit überlebt, solange Kern und Substrat intakt sind.',
+      },
+      {
+        name: 'Das Substrat',
+        tag: 'Gelesen und geschrieben',
+        body: 'Der dauerhafte Boden, über dem beide Schichten arbeiten: eine globale Datenbank, ein Ordner pro Anliegen und schwere Inhalte, adressiert per Hash. Der Kern schreibt es; die Schale liest es.',
+      },
+    ],
+    storageLabel: 'Speicher',
+    storage: [
+      { name: 'runtime.db', body: 'Das globale Nervensystem, im Besitz des Kerns und von der Schale abgefragt: die Uhr, der Schleifenindex, das Ledger, die Weckschlange, der Marktzustand, die Lease-Einträge, das Prognoseprotokoll.' },
+      { name: 'Schleifenordner', body: 'Ein Ordner pro Schleife. Jedes Anliegen ist ein eigener Organismus mit eigener loop.db: Einträge, Ziele, Anker, Artefakte, Spuren, Vorschläge, Zusammenfassungen.' },
+      { name: 'Blob-Speicher', body: 'Gemeinsame schwere Inhalte, adressiert per Hash: Checkpoints, Exporte, Trainingsdatensätze, Modell-Adapter. Aus den Datenbanken per Hash referenziert.' },
+    ],
+    stackLabel: 'Technologie',
+    stack: [
+      { label: 'Dauerhaftes Messaging', body: 'NOTIFY und LISTEN im Postgres-Stil auf SQLite: dauerhafte Warteschlangen, Streams, Pub/Sub, ein Planer und leichtes SQL. Eine Datei, kein Server zu betreiben.' },
+      { label: 'Numerischer Prognostiker', body: 'Ein kleines Zeitreihenmodell (TimesFM) läuft lokal auf der CPU und sagt Kosten und Nachfrage als Bereiche voraus, damit der Markt Aufmerksamkeit unter quantifizierter Unsicherheit bepreist.' },
+    ],
   },
 
   lexicon: {
@@ -100,19 +145,23 @@ export const normal: SiteConfig = {
       { term: 'Dionysian Drift', meaning: 'Eingegrenzte Leerlauf-Kognition über ungelöste Ideen. Keine zufällige Halluzination.' },
       { term: 'Amor Fati Log', meaning: 'Fehler akzeptiert, protokolliert und aus ihnen gelernt.' },
       { term: 'ÜberCore', meaning: 'Das beförderte lokale Gehirn, nach Training und Bewertung.' },
+      { term: 'Attention Capital', meaning: 'Token sind kein Treibstoff, sondern knappe Währung. Anliegen bieten darum; die Würdigen verdienen es.' },
+      { term: 'The Oracle', meaning: 'Numerische Voraussicht: sagt voraus, was ein Anliegen kosten und einbringen wird, mit Bereichen, nicht Vermutungen. Entscheidet nie.' },
+      { term: 'The Lease', meaning: 'Eine widerrufliche Gewährung von Aufmerksamkeit an ein Anliegen, begrenzt durch Obergrenze, Checkpoints und Zeit.' },
+      { term: 'Burn Quality', meaning: 'Das Urteil über eine Ausgabe: hat sie die Arbeit bewegt? Das Signal, das die Laufzeit lehrt, besser auszugeben.' },
     ],
   },
 
   quote: {
-    text: 'Künstliche Agenten zu bauen, die nicht nur antworten, sondern sich erinnern, zurückkehren, sich revidieren und sich selbst überwinden.',
+    text: 'Einen künstlichen Geist zu bauen, der nicht nur antwortet, sondern sich erinnert, zurückkehrt, sich revidiert und sich selbst überwindet.',
     attribution: 'Die Mission',
   },
 
   footer: {
-    litany: ['Kein Chatbot.', 'Keine weitere falsche Schleife.', 'Kein Context-Stuffing mit Logo.'],
+    litany: ['Kein Chatbot.', 'Keine weitere falsche Schleife.', 'Kein Context-Stuffing mit Logo.', 'Kein Ordner voller Markdown-Dateien.'],
     ctaLabel: 'Dem Aufbau folgen',
     ctaHref: 'mailto:fuehrerllm@gmail.com',
-    stack: 'Eine Laufzeit · SQLite + Honker · Open Weights',
-    fineprint: 'Übermensch Framework. Eine Open-Weight-first kognitive Laufzeit für selbstverbessernde, persistente Agenten.',
+    stack: 'Eine Laufzeit · Eine SQLite-Datei · Open Weights',
+    fineprint: 'Übermensch Framework. Eine Open-Weight-first kognitive Laufzeit, die sich an sich selbst erinnert.',
   },
 };

@@ -5,6 +5,7 @@
   import Enemy from './lib/components/Enemy.svelte';
   import Pillars from './lib/components/Pillars.svelte';
   import Pipeline from './lib/components/Pipeline.svelte';
+  import Foundations from './lib/components/Foundations.svelte';
   import Lexicon from './lib/components/Lexicon.svelte';
   import Quote from './lib/components/Quote.svelte';
   import Footer from './lib/components/Footer.svelte';
@@ -64,6 +65,9 @@
   <Enemy enemy={activeSite.enemy} />
   <Pillars kicker={activeSite.pillarsKicker} pillars={activeSite.pillars} cycle={activeSite.cycle} />
   <Pipeline pipeline={activeSite.pipeline} />
+  {#if activeSite.foundations}
+    <Foundations foundations={activeSite.foundations} />
+  {/if}
   <Lexicon lexicon={activeSite.lexicon} />
   <Quote quote={activeSite.quote} />
   <Footer footer={activeSite.footer} />

@@ -53,9 +53,9 @@
 
   .ring {
     fill: none;
-    stroke: var(--color-line);
-    stroke-width: 1;
-    stroke-dasharray: 0.004 0.008;
+    stroke: rgba(61, 242, 224, 0.4);
+    stroke-width: 1.5;
+    stroke-dasharray: 0.01 0.018;
   }
 
   .halo {

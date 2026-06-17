@@ -63,18 +63,22 @@
     margin-bottom: 1rem;
   }
 
+  .meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
   .number {
-    display: block;
     font-size: var(--text-small);
     font-weight: 560;
     letter-spacing: var(--tracking-kicker);
     color: var(--color-cyan);
     font-variant-numeric: tabular-nums;
-    margin-bottom: 0.75rem;
   }
 
   .name {
-    font-size: var(--text-display);
+    font-size: clamp(1.05rem, 1.9vw, 1.4rem);
     overflow-wrap: break-word;
   }
 
