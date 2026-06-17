@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Breitkopf Fraktur';
+  src: url('/fonts/BreitkopfFraktur.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/fonts/NewsreaderItalic.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-void: #0b0f14;
+  --color-cyan: #3df2e0;
+  --color-ink: #e6edf2;
+  --color-ink-dim: #8a97a3;
+  --color-ink-ghost: #3d4753;
+  --color-line: rgba(61, 242, 224, 0.14);
+  --color-line-soft: rgba(230, 237, 242, 0.08);
+  --color-on-cyan: #0b0f14;
+  --color-on-cyan-dim: rgba(11, 15, 20, 0.62);
+  --color-on-cyan-line: rgba(11, 15, 20, 0.22);
+
+  --font-display: 'Breitkopf Fraktur', 'UnifrakturMaguntia', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-quote: 'Newsreader', Georgia, 'Times New Roman', serif;
+
+  --text-hero: clamp(4.2rem, 13vw, 10.5rem);
+  --text-display: clamp(2.4rem, 5.5vw, 4.2rem);
+  --text-title: clamp(1.45rem, 2.6vw, 2.1rem);
+  --text-quote: clamp(1.6rem, 3.4vw, 2.6rem);
+  --text-litany: clamp(1.45rem, 3vw, 2.3rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+  --text-kicker: 0.8125rem;
+
+  --leading-body: 1.7;
+  --leading-tight: 1.15;
+  --tracking-kicker: 0.18em;
+
+  --width-page: 72rem;
+  --width-measure: 62ch;
+  --space-section: clamp(6.5rem, 16vh, 11rem);
+  --space-gutter: clamp(1.25rem, 4vw, 3rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-reveal: 0.8s;
+  --reveal-rise: 14px;
+  --dur-thread: 3.2s;
+  --dur-cycle: 14s;
+  --dur-float: 8s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition:
+    background 0.4s var(--ease-out),
+    color 0.4s var(--ease-out);
+}
+
+::selection {
+  background: var(--color-cyan);
+  color: var(--color-void);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--width-page);
+  margin-inline: auto;
+  padding-inline: var(--space-gutter);
+}
+
+.kicker {
+  font-size: var(--text-kicker);
+  font-weight: 560;
+  letter-spacing: var(--tracking-kicker);
+  text-transform: uppercase;
+  color: var(--color-cyan);
+}
+
+.fraktur {
+  font-family: var(--font-display);
+  font-weight: normal;
+  line-height: var(--leading-tight);
+}
+
+.will-reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-rise));
+  transition:
+    opacity var(--dur-reveal) var(--ease-out),
+    transform var(--dur-reveal) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+main.theme-normal {
+  isolation: isolate;
+}
+
+main.theme-slop {
+  position: relative;
+  isolation: isolate;
+  --font-display: 'Inter', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-quote: 'Inter', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+
+  --text-hero: 6.8rem;
+  --text-display: 3.05rem;
+  --text-title: 1.65rem;
+  --text-quote: 1.55rem;
+  --text-litany: 1.18rem;
+  --text-body: 1rem;
+  --text-small: 0.82rem;
+  --text-kicker: 0.75rem;
+  --tracking-kicker: 0.08em;
+  --leading-body: 1.65;
+  --space-section: clamp(4rem, 9vh, 6rem);
+
+  --color-void: #060b17;
+  --color-cyan: #5dddff;
+  --color-ink: #edf4ff;
+  --color-ink-dim: #a8bdd8;
+  --color-ink-ghost: #6f87a3;
+  --color-line: rgba(93, 221, 255, 0.28);
+  --color-line-soft: rgba(146, 198, 255, 0.16);
+  --color-on-cyan: #061325;
+  --color-on-cyan-dim: rgba(6, 19, 37, 0.74);
+  --color-on-cyan-line: rgba(6, 19, 37, 0.2);
+}
+
+main.theme-slop::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(1100px 540px at 95% -4%, rgba(95, 207, 255, 0.2), transparent 58%),
+    radial-gradient(760px 420px at -2% 8%, rgba(58, 123, 255, 0.21), transparent 62%),
+    linear-gradient(180deg, #060b17 0%, #08162a 46%, #08111f 100%);
+}
+
+main.theme-slop .fraktur {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+main.theme-slop .kicker {
+  font-weight: 640;
+  letter-spacing: 0.14em;
+}
+
+main.theme-slop section {
+  position: relative;
+}
+
+main.theme-slop .container {
+  max-width: 78rem;
+}
+
+main.theme-slop .pipeline {
+  background: linear-gradient(118deg, #6be0ff 0%, #7ab4ff 40%, #9ce7ff 100%);
+}
+
+main.theme-slop .pipeline .container {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+main.theme-slop .hero {
+  min-height: calc(100svh - 0.75rem);
+}
+
+main.theme-slop .wordmark {
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+main.theme-slop .quote blockquote,
+main.theme-slop .litany .line {
+  font-style: normal;
+}
+
+main.theme-slop .cta {
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(103, 216, 255, 0.2) inset;
+}
+
+main.theme-slop .cta:hover,
+main.theme-slop .cta:focus-visible {
+  box-shadow: 0 12px 32px rgba(90, 210, 255, 0.3);
+}
+
+@media (max-width: 760px) {
+  main.theme-slop {
+    --text-hero: 3.7rem;
+    --text-display: 2rem;
+    --text-title: 1.3rem;
+    --text-quote: 1.2rem;
+    --space-section: 4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,12 @@
+# dependencies & build output
+node_modules/
+dist/
+.vercel/
+
+# internal docs, tooling and assets — never deployed
+*.md
+!README.md
+.claude/
+scripts/
+*.zip
+/Screenshot*.png
