@@ -7,6 +7,7 @@ export function GET() {
   const urls = [
     { loc: `${SITE_URL}/`, lastmod: posts[0]?.date },
     { loc: `${SITE_URL}/news`, lastmod: posts[0]?.date },
+    { loc: `${SITE_URL}/status` },
     ...posts.map((p) => ({ loc: `${SITE_URL}/news/${p.slug}`, lastmod: p.date })),
   ];
 

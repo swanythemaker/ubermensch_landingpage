@@ -1,7 +1,8 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { getSite, ui, LANGS, type Lang, type SiteMode } from '../site.config';
-  import { SITE_URL, SITE_NAME, SITE_TAGLINE } from '$lib/site';
+  import { getSite, ui, type Lang, type SiteMode } from '../site.config';
+  import { SITE_URL, SITE_NAME, SITE_TAGLINE, OG_IMAGE } from '$lib/site';
+  import { LANG_KEY, detectLang } from '$lib/lang';
   import Hero from '$lib/components/Hero.svelte';
   import Litany from '$lib/components/Litany.svelte';
   import Enemy from '$lib/components/Enemy.svelte';
@@ -13,18 +14,8 @@
   import Footer from '$lib/components/Footer.svelte';
   import ModeToggle from '$lib/components/ModeToggle.svelte';
   import LangSwitcher from '$lib/components/LangSwitcher.svelte';
-  import NavNews from '$lib/components/NavNews.svelte';
+  import NavMenu from '$lib/components/NavMenu.svelte';
   import SlopGate from '$lib/components/SlopGate.svelte';
-
-  const LANG_KEY = 'um-lang';
-
-  function detectLang(): Lang {
-    const stored = localStorage.getItem(LANG_KEY);
-    if (stored && (LANGS as string[]).includes(stored)) return stored as Lang;
-    const nav = navigator.language?.slice(0, 2).toLowerCase();
-    if (nav && (LANGS as string[]).includes(nav)) return nav as Lang;
-    return 'en';
-  }
 
   let mode = $state<SiteMode>('normal');
   let lang = $state<Lang>('en');
@@ -106,16 +97,21 @@
   <meta property="og:locale:alternate" content="de_DE" />
   <meta property="og:locale:alternate" content="es_ES" />
 
+  <meta property="og:image" content={OG_IMAGE} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={SITE_NAME} />
   <meta name="twitter:description" content={SITE_TAGLINE} />
+  <meta name="twitter:image" content={OG_IMAGE} />
 
   {@html `<script type="application/ld+json">${orgLd}</` + 'script>'}
   {@html `<script type="application/ld+json">${siteLd}</` + 'script>'}
 </svelte:head>
 
 <LangSwitcher {lang} label={t.langSwitcherLabel} slop={mode === 'slop'} onChange={(l) => (lang = l)} />
-<NavNews slop={mode === 'slop'} />
+<NavMenu {lang} slop={mode === 'slop'} />
 <ModeToggle {mode} labels={t.modeLabels} label={t.modeToggleLabel} onSelect={selectMode} />
 
 <main class:theme-slop={mode === 'slop'} class:theme-normal={mode === 'normal'} class:screenshot-mode={screenshotMode}>

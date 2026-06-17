@@ -3,7 +3,7 @@ import { marked } from 'marked';
 export interface Post {
   slug: string;
   title: string;
-  date: string; // ISO yyyy-mm-dd
+  date: string;
   description: string;
   author: string;
   lang: string;

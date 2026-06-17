@@ -1,6 +1,15 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import { posts } from '$lib/posts';
-  import { SITE_URL, SITE_NAME } from '$lib/site';
+  import { SITE_URL, SITE_NAME, OG_IMAGE } from '$lib/site';
+  import { detectLang } from '$lib/lang';
+  import type { Lang } from '../../site.config';
+  import NavMenu from '$lib/components/NavMenu.svelte';
+
+  let lang = $state<Lang>('en');
+  $effect(() => {
+    if (browser) lang = detectLang();
+  });
 
   function fmt(date: string): string {
     const d = new Date(date + 'T00:00:00Z');
@@ -36,11 +45,17 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`${SITE_URL}/news`} />
   <meta property="og:site_name" content={SITE_NAME} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content={OG_IMAGE} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={`News — ${SITE_NAME}`} />
   <meta name="twitter:description" content={desc} />
+  <meta name="twitter:image" content={OG_IMAGE} />
   {@html `<script type="application/ld+json">${blogLd}</` + 'script>'}
 </svelte:head>
+
+<NavMenu {lang} />
 
 <main class="news theme-normal">
   <header class="news-head">

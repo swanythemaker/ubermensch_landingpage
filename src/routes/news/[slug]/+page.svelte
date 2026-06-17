@@ -1,8 +1,17 @@
 <script lang="ts">
-  import { SITE_URL, SITE_NAME } from '$lib/site';
+  import { browser } from '$app/environment';
+  import { SITE_URL, SITE_NAME, OG_IMAGE } from '$lib/site';
+  import { detectLang } from '$lib/lang';
+  import type { Lang } from '../../../site.config';
+  import NavMenu from '$lib/components/NavMenu.svelte';
 
   let { data } = $props();
   let post = $derived(data.post);
+
+  let lang = $state<Lang>('en');
+  $effect(() => {
+    if (browser) lang = detectLang();
+  });
 
   let url = $derived(`${SITE_URL}/news/${post.slug}`);
 
@@ -45,11 +54,17 @@
   <meta property="article:modified_time" content={post.date} />
   <meta property="article:author" content={post.author} />
   <meta property="article:section" content="News" />
+  <meta property="og:image" content={OG_IMAGE} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={post.title} />
   <meta name="twitter:description" content={post.description} />
+  <meta name="twitter:image" content={OG_IMAGE} />
   {@html `<script type="application/ld+json">${jsonLd}</` + 'script>'}
 </svelte:head>
+
+<NavMenu {lang} />
 
 <main class="article theme-normal">
   <p class="back"><a href="/news">← News</a></p>

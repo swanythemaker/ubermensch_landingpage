@@ -88,6 +88,11 @@ export interface UiStrings {
   langSwitcherLabel: string;
   modeToggleLabel: string;
   modeLabels: Record<SiteMode, string>;
+  nav: {
+    home: string;
+    news: string;
+    status: string;
+  };
   slopGate: {
     title: string;
     body: string;

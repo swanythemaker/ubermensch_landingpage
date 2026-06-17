@@ -7,6 +7,7 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Language',
     modeToggleLabel: 'Copy mode',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    nav: { home: 'Home', news: 'News', status: 'Status' },
     slopGate: {
       title: 'Are you sure?',
       body: 'Slop Mode floods the page with hyperagentic synergy buzzwords and venture-scale moat theater. Your taste may not survive. You really want to do this?',
@@ -20,6 +21,7 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Sprache',
     modeToggleLabel: 'Textmodus',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    nav: { home: 'Start', news: 'News', status: 'Status' },
     slopGate: {
       title: 'Bist du sicher?',
       body: 'Der Slop-Modus überflutet die Seite mit hyperagentischen Synergie-Buzzwords und Burggraben-Theater im Risikokapital-Maßstab. Dein Geschmack überlebt das vielleicht nicht. Willst du das wirklich tun?',
@@ -33,6 +35,7 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Idioma',
     modeToggleLabel: 'Modo de texto',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    nav: { home: 'Inicio', news: 'Noticias', status: 'Estado' },
     slopGate: {
       title: '¿Estás seguro?',
       body: 'El Modo Slop inunda la página con palabras de moda hiperagénticas, sinérgicas y teatro de foso defensivo a escala de capital riesgo. Puede que tu buen gusto no sobreviva. ¿De verdad quieres hacer esto?',
