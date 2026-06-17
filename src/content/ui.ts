@@ -7,6 +7,8 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Language',
     modeToggleLabel: 'Copy mode',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    menuOpen: 'Menu',
+    menuClose: 'Close',
     nav: { home: 'Home', news: 'News', status: 'Status' },
     slopGate: {
       title: 'Are you sure?',
@@ -21,6 +23,8 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Sprache',
     modeToggleLabel: 'Textmodus',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    menuOpen: 'Menü',
+    menuClose: 'Schließen',
     nav: { home: 'Start', news: 'News', status: 'Status' },
     slopGate: {
       title: 'Bist du sicher?',
@@ -35,6 +39,8 @@ export const ui: Record<Lang, UiStrings> = {
     langSwitcherLabel: 'Idioma',
     modeToggleLabel: 'Modo de texto',
     modeLabels: { normal: 'Normal', slop: 'Slop' },
+    menuOpen: 'Menú',
+    menuClose: 'Cerrar',
     nav: { home: 'Inicio', news: 'Noticias', status: 'Estado' },
     slopGate: {
       title: '¿Estás seguro?',

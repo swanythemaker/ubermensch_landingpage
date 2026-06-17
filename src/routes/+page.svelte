@@ -12,9 +12,7 @@
   import Lexicon from '$lib/components/Lexicon.svelte';
   import Quote from '$lib/components/Quote.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import ModeToggle from '$lib/components/ModeToggle.svelte';
-  import LangSwitcher from '$lib/components/LangSwitcher.svelte';
-  import NavMenu from '$lib/components/NavMenu.svelte';
+  import SiteHeader from '$lib/components/SiteHeader.svelte';
   import SlopGate from '$lib/components/SlopGate.svelte';
 
   let mode = $state<SiteMode>('normal');
@@ -110,9 +108,13 @@
   {@html `<script type="application/ld+json">${siteLd}</` + 'script>'}
 </svelte:head>
 
-<LangSwitcher {lang} label={t.langSwitcherLabel} slop={mode === 'slop'} onChange={(l) => (lang = l)} />
-<NavMenu {lang} slop={mode === 'slop'} />
-<ModeToggle {mode} labels={t.modeLabels} label={t.modeToggleLabel} onSelect={selectMode} />
+<SiteHeader
+  {lang}
+  {mode}
+  slop={mode === 'slop'}
+  onLangChange={(l) => (lang = l)}
+  onModeSelect={selectMode}
+/>
 
 <main class:theme-slop={mode === 'slop'} class:theme-normal={mode === 'normal'} class:screenshot-mode={screenshotMode}>
   <Hero hero={activeSite.hero} {mode} />

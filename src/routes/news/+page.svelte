@@ -4,7 +4,7 @@
   import { SITE_URL, SITE_NAME, OG_IMAGE } from '$lib/site';
   import { detectLang } from '$lib/lang';
   import type { Lang } from '../../site.config';
-  import NavMenu from '$lib/components/NavMenu.svelte';
+  import SiteHeader from '$lib/components/SiteHeader.svelte';
 
   let lang = $state<Lang>('en');
   $effect(() => {
@@ -55,7 +55,7 @@
   {@html `<script type="application/ld+json">${blogLd}</` + 'script>'}
 </svelte:head>
 
-<NavMenu {lang} />
+<SiteHeader {lang} />
 
 <main class="news theme-normal">
   <header class="news-head">

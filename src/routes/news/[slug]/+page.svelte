@@ -3,7 +3,7 @@
   import { SITE_URL, SITE_NAME, OG_IMAGE } from '$lib/site';
   import { detectLang } from '$lib/lang';
   import type { Lang } from '../../../site.config';
-  import NavMenu from '$lib/components/NavMenu.svelte';
+  import SiteHeader from '$lib/components/SiteHeader.svelte';
 
   let { data } = $props();
   let post = $derived(data.post);
@@ -64,7 +64,7 @@
   {@html `<script type="application/ld+json">${jsonLd}</` + 'script>'}
 </svelte:head>
 
-<NavMenu {lang} />
+<SiteHeader {lang} />
 
 <main class="article theme-normal">
   <p class="back"><a href="/news">← News</a></p>

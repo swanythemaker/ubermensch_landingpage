@@ -3,7 +3,7 @@
   import { SITE_URL, SITE_NAME, OG_IMAGE } from '$lib/site';
   import { detectLang } from '$lib/lang';
   import type { Lang } from '../../site.config';
-  import NavMenu from '$lib/components/NavMenu.svelte';
+  import SiteHeader from '$lib/components/SiteHeader.svelte';
 
   let lang = $state<Lang>('en');
   $effect(() => {
@@ -32,7 +32,7 @@
   <meta name="twitter:image" content={OG_IMAGE} />
 </svelte:head>
 
-<NavMenu {lang} />
+<SiteHeader {lang} />
 
 <main class="status theme-normal">
   <header class="status-head">
